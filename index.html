@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Ouzoun | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Hasan Ouzoun</h1>
+        <p>Van doorzetter tot Developer: Bouwen aan een digitale toekomst met passie en precisie.</p>
+    </header>
+
+    <div class="moving-bar">
+        <div class="marquee">
+            DEVELOPER // DESIGNER // PROBLEM SOLVER // HASAN OUZOUN // GRADUAAT PROGRAMMEREN // ARTEVELDEHOGESCHOOL //
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>Over Mij</h2>
+        <p>Ik ben een gedreven eerstejaars student <strong>Graduaat Programmeren aan de Arteveldehogeschool Gent</strong>. Mijn weg naar de IT was niet standaard, maar wel vol vastberadenheid.</p>
+        
+        <h3>Mijn Verhaal</h3>
+        <p>Door de oorlog in Syrië verhuisde ik op 9-jarige leeftijd naar Turkije, waar ik tot mijn 17e fulltime werkte. Ondanks dat ik destijds slechts tot de 4e klas van de basisschool kon gaan, ben ik in België via het <strong>Tweede Kans Onderwijs (CVO Focus)</strong> opgeklommen tot het hoger onderwijs.</p>
+        
+        <h3>Meerwaarde</h3>
+        <p>Mijn grootste kracht is mijn <strong>veerkracht</strong>. Ik leer snel, denk in oplossingen en heb de discipline om complexe doelen te bereiken.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technologieën & Tools</h2>
+        <ul>
+            <li><strong>Talen:</strong> C#, HTML5, CSS3, JavaScript</li>
+            <li><strong>Tools:</strong> Visual Studio, Git, GitHub, Office 365</li>
+            <li><strong>Talenkennis:</strong> Nederlands, Turks, Arabisch, Engels</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Mijn Werk</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Mijn persoonlijke website waarin ik mijn vaardigheden en achtergrond presenteer.</p>
+                <a href="https://pgm-2526-programming-1.github.io/eindopdracht-gamescom-2026-Pgm-Hasan/">Details & GitHub →</a>
+            </div>
+            <div class="project-card">
+                <h3>Schoolproject</h3>
+                <p>Een schoolproject gericht op objectgeoriënteerd programmeren in HTML . CSS . JavaScript</p>
+                <a href=" https://pgm-2526-web-2.github.io/periodeopdracht-de-tijdloze-Pgm-Hasan/">Details & GitHub →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul class="contact-info">
+            <li><strong>E-mail:</strong> <a href="mailto:hasan.anas.ouzon@gmail.com">hasan.anas.ouzon@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hasan-ouzoun-549126405/">Mijn Profiel</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Pgm-Hasan">Mijn Repositories</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hasan Ouzoun - Gebouwd met passie voor code.</p>
+    </footer>
+
+    <script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
